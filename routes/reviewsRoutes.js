@@ -25,14 +25,14 @@ router.post('/', function(req, res){
 router.put('/:id', function(req, res){
     res.json({
         success:true,
-        msg: `aqui se editará un review`
+        msg: `aqui se editará un review ${req.params.id}`
     })
 })
 
 router.delete('/:id', function(req, res){
     res.json({
         success:true,
-        msg: `aqui se eliminara un review`
+        msg: `aqui se eliminara un review ${req.params.id}`
     })
 })
 
